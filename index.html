@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_library_project</title>
+    <link rel="stylesheet" href="css/library.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="script/library.js"></script>
+</head>
+<body>
+    <div id="Library">
+        <h1 class="type-books">My Library</h1>
+
+        <div id="main-content">
+            <div class="book-card">
+                <div class="header">
+                    <div class="container">
+                        <button id="add" type="button" class="addbook">Add new book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div id="addBookForm" style="display:none">
+                <span class="close">×</span>
+                <h2 class="addnew">Add New Book</h2>
+                <div class="form-group">
+                    <label for="bookTitle">Book Title:</label>
+                    <input type="text" id="bookTitle" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="bookAuthor">Author Book:</label>
+                    <input type="text" id="bookAuthor" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="bookPages">Pages Book:</label>
+                    <input type="text" id="bookPages" class="form-control">
+                </div>
+                <div id="overlay" class="overlay"></div>
+                <div id="errorMsg" class="error-msg"></div>
+                <div clas="is-read">
+                    <label for="isRead">Have you read it</label>
+                    <input class="checkbox" type="checkbox" id="isRead"/>
+                </div>
+                <button id="saveBook" type="button" class="btn-btn-primary">Save Book</button>
+                <button id="return" type="button" class="btn-btn-primary">Return</button>
+            </div>
+
+            <div id="libraryContainer" class="library-container"></div>
+
+    </div>
+</body>
+</html>
