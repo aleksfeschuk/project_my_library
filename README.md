@@ -1,6 +1,5 @@
 # project_my_library
 
-- A simple admin panel page with html code, css and script in html (javascript)
 - HTML
 - CSS
 - Javascript
